@@ -33,11 +33,12 @@ int main() {
   {
     rotate_array(array,size_of_array);
   }
-  /*
+
   if(choice==3)
   {
     sort_array(array,size_of_array);
   }
+  /*
   if(choice==4)
   {
     search_unsorted(array,size_of_array);

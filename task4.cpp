@@ -38,3 +38,24 @@ int rotate_array(int array[],int size_of_array)
   for(i=0;i<size_of_array;i++)
     std::cout<<array[i]<<std::endl;
 }
+
+int sort_array(int array[],int size_of_array)
+{
+  int i,j,temp;
+  for(j=0;j<=size_of_array;j++)
+  {
+    for(i=j;i<size_of_array;i++)
+    {
+      if(array[j]>array[i])
+      {
+        temp=array[j];
+        array[j]=array[i];
+        array[i]=temp;
+      }
+    }
+  }
+  std::cout<<"sorted list=";
+  for(i=0;i<size_of_array;i++)
+    std::cout<<std::endl<<array[i];
+
+}
