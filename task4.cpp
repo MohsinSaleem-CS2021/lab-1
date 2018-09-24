@@ -57,5 +57,19 @@ int sort_array(int array[],int size_of_array)
   std::cout<<"sorted list=";
   for(i=0;i<size_of_array;i++)
     std::cout<<std::endl<<array[i];
+}
 
+int search_unsorted(int array[],int size_of_array)
+{
+  int i,num_to_be_found;
+  std::cout<<"number to be found=";std::cin>>num_to_be_found;
+  for(i=0;i<=size_of_array;i++)
+  {
+    if(num_to_be_found==array[i])
+      {std::cout<<"location of number ="<<i<<std::endl;
+      return 0;}
+  }
+  //if(num_to_be_found!=array[i])
+    std::cout<<std::endl<<"Number is not present!!  \n";
+    return 0;
 }

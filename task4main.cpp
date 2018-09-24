@@ -38,11 +38,12 @@ int main() {
   {
     sort_array(array,size_of_array);
   }
-  /*
+
   if(choice==4)
   {
     search_unsorted(array,size_of_array);
   }
+  /*
   if(choice==5)
   {
     search_sorted(array,size_of_array);
