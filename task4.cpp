@@ -73,9 +73,10 @@ int search_unsorted(int array[],int size_of_array)
     return 0;
 }
 
-int search_sorted(int array[],int size_of_array)
+int search_sorted(int array[],int size_of_array, int num_to_be_found,int index)
 {
-  int i,j,temp;
+
+  /*int i,j,temp;
   for(j=0;j<=size_of_array;j++)
   {
     for(i=j;i<size_of_array;i++)
@@ -90,18 +91,21 @@ int search_sorted(int array[],int size_of_array)
   }
   std::cout<<"sorted list=";
   for(i=0;i<size_of_array;i++)
-    std::cout<<std::endl<<array[i];
+    std::cout<<std::endl<<array[i]; */
 
 
-  int num_to_be_found;
-  std::cout<<"number to be found=";std::cin>>num_to_be_found;
-  for(i=0;i<=size_of_array;i++)
-  {
-    if(num_to_be_found==array[i])
-      {std::cout<<"location of number ="<<i<<std::endl;
-      return 0;}
-  }
-    std::cout<<std::endl<<"Number is not present!!  \n";
-    return 0;
+
+
+
+    if(num_to_be_found==array[index])
+      {std::cout<<"location of number ="<<index<<std::endl;}
+
+      else if(num_to_be_found>array[index])
+      search_sorted(array,size_of_array,num_to_be_found,index+1);
+
+      else if(size_of_array<=index)
+        std::cout<<"Number not found!!"<<std::endl;
+
+
 
 }

@@ -46,7 +46,13 @@ int main() {
 
   if(choice==5)
   {
-    search_sorted(array,size_of_array);
+    sort_array(array,size_of_array);
+
+    int num_to_be_found;
+    std::cout<<"number to be found=";std::cin>>num_to_be_found;
+
+    search_sorted(array,size_of_array,num_to_be_found,0);
+
   }
 
   return 0;
