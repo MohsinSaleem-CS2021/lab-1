@@ -75,28 +75,6 @@ int search_unsorted(int array[],int size_of_array)
 
 int search_sorted(int array[],int size_of_array, int num_to_be_found,int index)
 {
-
-  /*int i,j,temp;
-  for(j=0;j<=size_of_array;j++)
-  {
-    for(i=j;i<size_of_array;i++)
-    {
-      if(array[j]>array[i])
-      {
-        temp=array[j];
-        array[j]=array[i];
-        array[i]=temp;
-      }
-    }
-  }
-  std::cout<<"sorted list=";
-  for(i=0;i<size_of_array;i++)
-    std::cout<<std::endl<<array[i]; */
-
-
-
-
-
     if(num_to_be_found==array[index])
       {std::cout<<"location of number ="<<index<<std::endl;}
 
